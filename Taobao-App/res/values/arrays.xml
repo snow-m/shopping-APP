@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="country_codes">
+        <item>-</item>
+        <item>US</item>
+    </string-array>
+    <string-array name="search_codes">
+        <item>Baidu</item>
+        <!--
+    <item>Google</item>
+    <item>CiBa</item>
+    <item>Taobao</item>
+        -->
+    </string-array>
+
+    <integer-array name="nav_default_ids">
+        <item>0</item>
+        <item>14</item>
+        <item>50</item>
+        <item>59</item>
+        <item>96</item>
+        <item>71</item>
+        <item>97</item>
+        <item>112</item>
+        <item>124</item>
+        <item>138</item>
+    </integer-array>
+</resources>

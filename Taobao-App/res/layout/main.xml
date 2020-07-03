@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+    </TabWidget>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/title" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/RadioGroup"
+            android:layout_below="@+id/title_layout" >
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/type"
+                style="@style/main_radio_botton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bar_selector"
+                android:checked="true"
+                android:gravity="center"
+                android:text="分类"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/search"
+                style="@style/main_radio_botton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bar_selector"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/torll"
+                style="@style/main_radio_botton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bar_selector"
+                android:gravity="center"
+                android:text="购物车"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/user"
+                style="@style/main_radio_botton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bar_selector"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="我的账户"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</TabHost>

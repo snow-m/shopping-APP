@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/checked" >
+
+        <ImageView
+            android:id="@+id/shop_img"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/shop_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/shop_img"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/shop_img"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/shop_desc"
+            android:layout_below="@+id/shop_desc"
+            android:text=""
+            android:textColor="#FF4400"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/mall_num_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/shop_desc"
+            android:layout_below="@+id/price"
+            android:background="#EEF3FA"
+            android:padding="1dip" >
+
+            <TextView
+                android:id="@+id/num_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="数量:" />
+
+            <ImageView
+                android:id="@+id/minus_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/num_text"
+                android:background="@drawable/buttons_white"
+                android:padding="5dip"
+                android:src="@drawable/ic_shopping_card_minus" />
+
+            <TextView
+                android:id="@+id/goods_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/minus_btn"
+                android:layout_alignTop="@+id/minus_btn"
+                android:layout_marginLeft="1dip"
+                android:layout_toRightOf="@+id/minus_btn"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:src="@drawable/ic_shopping_card_minus" />
+
+            <ImageView
+                android:id="@+id/add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dip"
+                android:layout_toRightOf="@+id/goods_num"
+                android:background="@drawable/buttons_white"
+                android:padding="5dip"
+                android:src="@drawable/ic_shopping_card_add" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="9dip"
+        android:button="@drawable/checkedbox_selector"
+        android:clickable="false"
+        android:padding="5dip"
+        android:visibility="gone" />
+
+</RelativeLayout>

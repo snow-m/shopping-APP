@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="wallpaper_width">25dip</dimen>
+    <dimen name="wallpaper_height">25dip</dimen>
+<dimen name="standard_padding">8dip</dimen>
+    <dimen name="half_padding">4dip</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="Medium_TextSize">20.0dip</dimen>
+    <dimen name="Small_TextSize">15.0dip</dimen>
+    <dimen name="Tiny_TextSize">10.0dip</dimen>
+    <dimen name="gesture_thumbnail_inset">8dip</dimen>
+    <dimen name="gesture_thumbnail_size">64dip</dimen>
+
+    <item name="menuFromDegrees" format="float" type="dimen">180.0</item>
+    <item name="menuToDegrees" format="float" type="dimen">360.0</item>
+
+    <dimen name="menuChildSize">45dp</dimen>
+    <dimen name="nineItemSize">64dp</dimen>
+    
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_center_back_width">20dip</dimen>
+    <dimen name="app_center_back_height">20dip</dimen>
+    <dimen name="app_center_back_left_margin">30dip</dimen>
+    <dimen name="app_center_title">16sp</dimen>
+    <dimen name="app_center_height">40dip</dimen>
+    <dimen name="app_center_app_list_height">90dip</dimen>
+    <dimen name="app_center_app_list_type_img">40dip</dimen>
+    <dimen name="app_center_app_list_icon">55dip</dimen>
+    <dimen name="app_center_app_install">40dip</dimen>
+    <dimen name="app_center_app_list_icon_margin">15dip</dimen>
+    <dimen name="app_center_app_detail_icon">60dip</dimen>
+    <dimen name="app_center_app_praise">30dip</dimen>
+    <!-- 
+    Long text size
+     -->
+    <dimen name="long_title_size">16sp</dimen>
+    <dimen name="long_text_size">15sp</dimen>
+    <dimen name="long_text_tip_size">15sp</dimen>
+</resources>

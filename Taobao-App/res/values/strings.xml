@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">淘宝</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+  <string name="login_name">用户名：</string>
+    <string name="login_pwd">密  码：</string>
+     <string name="Commons.CopyToastMessage">已经复制到粘贴板</string>
+  
+</resources>

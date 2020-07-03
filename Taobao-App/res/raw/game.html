@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta http-equiv="Cache-Control" content="max-age=0" />
+        <meta name="MobileOptimized" content="240" />
+        <meta name="apple-touch-fullscreen" content="YES" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0" />
+        <title>火猴浏览器--中国手机游戏</title>
+        <script type="text/javascript" src="zepto.min.js"></script>
+        <link href="game.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+            function downappid(appid, url, e) {
+                if (e && e.stopPropagation) {
+                    e.stopPropagation();
+                } else {//IE
+                    window.event.cancelBubble = true;
+                }
+                $.post('http://agame.huohou.com/action/down.php', {
+                    appid : appid,
+                    url : url,
+                    s_from : -1
+                }, function(res) {
+                    if (res.flag == 'success') {
+                        window.location.href = url;
+                    }
+                }, 'json');
+            }
+            function pv_tj(s){                
+                $.get('http://agame.huohou.com/page/visit_log.php?s_from=1'+s, {}, function(res) {
+                    //
+                }, 'json');
+            }
+        </script>
+    </head>
+    <body>
+        <div class="ui-header ms-cf" style="background: none repeat scroll 0 0 #648918;height:60px">
+            <a href="http://agame.huohou.com/html/top-index_pt-1.html" class="ui-header-logo"><img src="logo.png" alt="火猴手游--中国手游门户第一站" class="ms-fl img" style="margin-top:15px"></a>
+        </div>
+        <nav class="ui-nav">
+            <ul class="ui-nav-bar ui-nav-bar-index ms-cf">
+                <li>
+                    <a href="http://agame.huohou.com/html/top-index_pt-1.html" class="on1">首页</a>
+                </li>
+                <li>
+                    <a href="http://agame.huohou.com/html/top-game-1.html" class="on1">游戏</a>
+                </li>
+                <li>
+                    <a href="http://agame.huohou.com/html/top-rank-1-all_1.html" class="on1">排行</a>
+                </li>
+                <li>
+                    <a href="http://agame.huohou.com/html/top-cat-1.html" class="on1">分类</a>
+                </li>
+            </ul>
+        </nav>
+        <header class="r_title ms-cf">
+            <h4 class="label labe80">推荐</h4>
+            <h4 class="label2" onclick="javascript:window.location='http://agame.huohou.com/m'">更多</h4>
+        </header>
+        <div class="js_ngtab_area js_ngtab_out ms-cf">
+            <section id="content_box">
+                <ul class="ui-mudle-rank ms-cf" id="index_tuijian">
+                    <li class="" onclick="javascript:window.location.href='http://agame.huohou.com/html/appinfo-appinfo-337.html?s_from=-1'" style="cursor:pointer">
+                        <div class="ui-mudle-rank-link ms-cf " style="padding:2px 2px 0px 2px">
+                            <div class="ui-mudle-rank-link-exp">
+                                <a href="http://agame.huohou.com/html/appinfo-appinfo-337.html?s_from=-1"  class="ms-fl imgArea" style="width:50px"> <span class="roundImg" style="background:url(2275.png.jpg) no-repeat center center; width: 50px; height:50px; background-size:50px;"> <img class="img js-roundImg" src="2275.png.jpg" alt="兄弟盟" style="opacity: 0; "> </span> </a>
+                                <div class="ms-fl info" style="width:88px">
+                                    <a href="http://agame.huohou.com/html/appinfo-appinfo-337.html?s_from=-1"  class="title" style="font-size:12px">兄弟萌</a>
+                                    <p class="rank ms-tc ms-fl" style="margin-top:5px;margin-bottom:5px">
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                    </p>
+                                    <p class="indexBtn">
+                                        <span style="float:left;font-size:12px;color:gray;"> 32.5MB </span><a onclick="downappid(337,'http://agame.huohou.com/upload/000/002/276/2276.apk',event)" href="javascript:void(0)"  class="btn" style="float:right;width:32px;height:16px;line-height:16px;font-size:12px;margin-right:5px">下载</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" onclick="javascript:window.location.href='http://agame.huohou.com/html/appinfo-appinfo-301.html?s_from=-1'" style="cursor:pointer">
+                        <div class="ui-mudle-rank-link ms-cf " style="padding:2px 2px 0px 2px">
+                            <div class="ui-mudle-rank-link-exp">
+                                <a href="http://agame.huohou.com/html/appinfo-appinfo-301.html?s_from=-1"  class="ms-fl imgArea" style="width:50px"> <span class="roundImg" style="background:url(2007.png.jpg) no-repeat center center; width: 50px; height:50px; background-size:50px;"> <img class="img js-roundImg" src="2007.png.jpg" alt="合金弹头" style="opacity: 0; "> </span> </a>
+                                <div class="ms-fl info" style="width:88px">
+                                    <a href="http://agame.huohou.com/html/appinfo-appinfo-301.html?s_from=-1"  class="title" style="font-size:12px">合金弹头</a>
+                                    <p class="rank ms-tc ms-fl" style="margin-top:5px;margin-bottom:5px">
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                    </p>
+                                    <p class="indexBtn">
+                                        <span style="float:left;font-size:12px;color:gray;"> 3.7MB </span><a onclick="downappid(301,'http://agame.huohou.com/upload/000/002/008/2008.apk',event)" href="javascript:void(0)"  class="btn" style="float:right;width:32px;height:16px;line-height:16px;font-size:12px;margin-right:5px">下载</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" onclick="javascript:window.location.href='http://agame.huohou.com/html/appinfo-appinfo-333.html?s_from=-1'" style="cursor:pointer">
+                        <div class="ui-mudle-rank-link ms-cf " style="padding:2px 2px 0px 2px">
+                            <div class="ui-mudle-rank-link-exp">
+                                <a href="http://agame.huohou.com/html/appinfo-appinfo-333.html?s_from=-1"  class="ms-fl imgArea" style="width:50px"> <span class="roundImg" style="background:url(2247.png.jpg) no-repeat center center; width: 50px; height:50px; background-size:50px;"> <img class="img js-roundImg" src="2247.png.jpg" alt="圣歌" style="opacity: 0; "> </span> </a>
+                                <div class="ms-fl info" style="width:88px">
+                                    <a href="http://agame.huohou.com/html/appinfo-appinfo-333.html?s_from=-1"  class="title" style="font-size:12px">圣歌</a>
+                                    <p class="rank ms-tc ms-fl" style="margin-top:5px;margin-bottom:5px">
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                    </p>
+                                    <p class="indexBtn">
+                                        <span style="float:left;font-size:12px;color:gray;"> 93.5MB </span><a onclick="downappid(333,'http://agame.huohou.com/upload/000/002/248/2248.apk',event)" href="javascript:void(0)"  class="btn" style="float:right;width:32px;height:16px;line-height:16px;font-size:12px;margin-right:5px">下载</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" onclick="javascript:window.location.href='http://agame.huohou.com/html/appinfo-appinfo-311.html?s_from=-1'" style="cursor:pointer">
+                        <div class="ui-mudle-rank-link ms-cf " style="padding:2px 2px 0px 2px">
+                            <div class="ui-mudle-rank-link-exp">
+                                <a href="http://agame.huohou.com/html/appinfo-appinfo-311.html?s_from=-1"  class="ms-fl imgArea" style="width:50px"> <span class="roundImg" style="background:url(2072.png.jpg) no-repeat center center; width: 50px; height:50px; background-size:50px;"> <img class="img js-roundImg" src="2072.png.jpg" alt="天天爱西游" style="opacity: 0; "> </span> </a>
+                                <div class="ms-fl info" style="width:88px">
+                                    <a href="http://agame.huohou.com/html/appinfo-appinfo-311.html?s_from=-1"  class="title" style="font-size:12px">天天爱西游</a>
+                                    <p class="rank ms-tc ms-fl" style="margin-top:5px;margin-bottom:5px">
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                    </p>
+                                    <p class="indexBtn">
+                                        <span style="float:left;font-size:12px;color:gray;"> 32.8MB </span><a onclick="downappid(311,'http://agame.huohou.com/upload/000/002/073/2073.apk',event)" href="javascript:void(0)"  class="btn" style="float:right;width:32px;height:16px;line-height:16px;font-size:12px;margin-right:5px">下载</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" onclick="javascript:window.location.href='http://agame.huohou.com/html/appinfo-appinfo-254.html?s_from=-1'" style="cursor:pointer">
+                        <div class="ui-mudle-rank-link ms-cf " style="padding:2px 2px 0px 2px">
+                            <div class="ui-mudle-rank-link-exp">
+                                <a href="http://agame.huohou.com/html/appinfo-appinfo-254.html?s_from=-1"  class="ms-fl imgArea" style="width:50px"> <span class="roundImg" style="background:url(1674.png.jpg) no-repeat center center; width: 50px; height:50px; background-size:50px;"> <img class="img js-roundImg" src="1674.png.jpg" alt="指尖水浒" style="opacity: 0; "> </span> </a>
+                                <div class="ms-fl info" style="width:88px">
+                                    <a href="http://agame.huohou.com/html/appinfo-appinfo-254.html?s_from=-1"  class="title" style="font-size:12px">指尖水浒</a>
+                                    <p class="rank ms-tc ms-fl" style="margin-top:5px;margin-bottom:5px">
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="no"></span>
+                                        <span class="no"></span>
+                                    </p>
+                                    <p class="indexBtn">
+                                        <span style="float:left;font-size:12px;color:gray;"> 24.7MB </span><a onclick="downappid(254,'http://agame.huohou.com/upload/000/001/675/1675.apk',event)" href="javascript:void(0)"  class="btn" style="float:right;width:32px;height:16px;line-height:16px;font-size:12px;margin-right:5px">下载</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" onclick="javascript:window.location.href='http://agame.huohou.com/html/appinfo-appinfo-328.html?s_from=-1'" style="cursor:pointer">
+                        <div class="ui-mudle-rank-link ms-cf " style="padding:2px 2px 0px 2px">
+                            <div class="ui-mudle-rank-link-exp">
+                                <a href="http://agame.huohou.com/html/appinfo-appinfo-328.html?s_from=-1" class="ms-fl imgArea" style="width:50px"> <span class="roundImg" style="background:url(2208.png.jpg) no-repeat center center; width: 50px; height:50px; background-size:50px;"> <img class="img js-roundImg" src="2208.png.jpg" alt="捕鱼天国" style="opacity: 0; "> </span> </a>
+                                <div class="ms-fl info" style="width:88px">
+                                    <a href="http://agame.huohou.com/html/appinfo-appinfo-328.html?s_from=-1" class="title" style="font-size:12px">捕鱼天国</a>
+                                    <p class="rank ms-tc ms-fl" style="margin-top:5px;margin-bottom:5px">
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                    </p>
+                                    <p class="indexBtn">
+                                        <span style="float:left;font-size:12px;color:gray;"> 10MB </span><a onclick="downappid(328,'http://agame.huohou.com/upload/000/002/209/2209.apk',event)" href="javascript:void(0)" class="btn" style="float:right;width:32px;height:16px;line-height:16px;font-size:12px;margin-right:5px">下载</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" onclick="javascript:window.location.href='http://agame.huohou.com/html/appinfo-appinfo-312.html?s_from=-1'" style="cursor:pointer">
+                        <div class="ui-mudle-rank-link ms-cf " style="padding:2px 2px 0px 2px">
+                            <div class="ui-mudle-rank-link-exp">
+                                <a href="http://agame.huohou.com/html/appinfo-appinfo-312.html?s_from=-1"  class="ms-fl imgArea" style="width:50px"> <span class="roundImg" style="background:url(2086.png.jpg) no-repeat center center; width: 50px; height:50px; background-size:50px;"> <img class="img js-roundImg" src="2086.png.jpg" alt="梦想海贼王" style="opacity: 0; "> </span> </a>
+                                <div class="ms-fl info" style="width:88px">
+                                    <a href="http://agame.huohou.com/html/appinfo-appinfo-312.html?s_from=-1"  class="title" style="font-size:12px">梦想海贼王</a>
+                                    <p class="rank ms-tc ms-fl" style="margin-top:5px;margin-bottom:5px">
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="no"></span>
+                                    </p>
+                                    <p class="indexBtn">
+                                        <span style="float:left;font-size:12px;color:gray;"> 41.8MB </span><a onclick="downappid(312,'http://agame.huohou.com/upload/000/002/087/2087.apk',event)" href="javascript:void(0)"  class="btn" style="float:right;width:32px;height:16px;line-height:16px;font-size:12px;margin-right:5px">下载</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" onclick="javascript:window.location.href='http://agame.huohou.com/html/appinfo-appinfo-364.html?s_from=-1'" style="cursor:pointer">
+                        <div class="ui-mudle-rank-link ms-cf " style="padding:2px 2px 0px 2px">
+                            <div class="ui-mudle-rank-link-exp">
+                                <a href="http://agame.huohou.com/html/appinfo-appinfo-364.html?s_from=-1"  class="ms-fl imgArea" style="width:50px"> <span class="roundImg" style="background:url(60.jpg) no-repeat center center; width: 50px; height:50px; background-size:50px;"> <img class="img js-roundImg" src="60.jpg" alt="神仙道" style="opacity: 0; "> </span> </a>
+                                <div class="ms-fl info" style="width:88px">
+                                    <a href="http://agame.huohou.com/html/appinfo-appinfo-364.html?s_from=-1"  class="title" style="font-size:12px">神仙道</a>
+                                    <p class="rank ms-tc ms-fl" style="margin-top:5px;margin-bottom:5px">
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                    </p>
+                                    <p class="indexBtn">
+                                        <span style="float:left;font-size:12px;color:gray;"> 64.9MB </span><a onclick="downappid(364,'http://agame.huohou.com/upload/000/002/515/2515.apk',event)" href="javascript:void(0)"  class="btn" style="float:right;width:32px;height:16px;line-height:16px;font-size:12px;margin-right:5px">下载</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" onclick="javascript:window.location.href='http://agame.huohou.com/html/appinfo-appinfo-332.html?s_from=-1'" style="cursor:pointer">
+                        <div class="ui-mudle-rank-link ms-cf " style="padding:2px 2px 0px 2px">
+                            <div class="ui-mudle-rank-link-exp">
+                                <a href="http://agame.huohou.com/html/appinfo-appinfo-332.html?s_from=-1"  class="ms-fl imgArea" style="width:50px"> <span class="roundImg" style="background:url(2238.png.jpg) no-repeat center center; width: 50px; height:50px; background-size:50px;"> <img class="img js-roundImg" src="2238.png.jpg" alt="风流天子" style="opacity: 0; "> </span> </a>
+                                <div class="ms-fl info" style="width:88px">
+                                    <a href="http://agame.huohou.com/html/appinfo-appinfo-332.html?s_from=-1"  class="title" style="font-size:12px">风流天子</a>
+                                    <p class="rank ms-tc ms-fl" style="margin-top:5px;margin-bottom:5px">
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                    </p>
+                                    <p class="indexBtn">
+                                        <span style="float:left;font-size:12px;color:gray;"> 48.5MB </span><a onclick="downappid(332,'http://agame.huohou.com/upload/000/002/239/2239.apk',event)" href="javascript:void(0)"  class="btn" style="float:right;width:32px;height:16px;line-height:16px;font-size:12px;margin-right:5px">下载</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" onclick="javascript:window.location.href='http://agame.huohou.com/html/appinfo-appinfo-323.html?s_from=-1'" style="cursor:pointer">
+                        <div class="ui-mudle-rank-link ms-cf " style="padding:2px 2px 0px 2px">
+                            <div class="ui-mudle-rank-link-exp">
+                                <a href="http://agame.huohou.com/html/appinfo-appinfo-323.html?s_from=-1"  class="ms-fl imgArea" style="width:50px"> <span class="roundImg" style="background:url(2291.png.jpg) no-repeat center center; width: 50px; height:50px; background-size:50px;"> <img class="img js-roundImg" src="2291.png.jpg" alt="魔法禁书" style="opacity: 0; "> </span> </a>
+                                <div class="ms-fl info" style="width:88px">
+                                    <a href="http://agame.huohou.com/html/appinfo-appinfo-323.html?s_from=-1"  class="title" style="font-size:12px">魔法禁书</a>
+                                    <p class="rank ms-tc ms-fl" style="margin-top:5px;margin-bottom:5px">
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                        <span class="good"></span>
+                                    </p>
+                                    <p class="indexBtn">
+                                        <span style="float:left;font-size:12px;color:gray;"> 104.2MB </span><a onclick="downappid(323,'http://agame.huohou.com/upload/000/002/173/2173.apk',event)" href="javascript:void(0)"  class="btn" style="float:right;width:32px;height:16px;line-height:16px;font-size:12px;margin-right:5px">下载</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <footer class="ui-footer" onclick="javascript:window.location='http://agame.huohou.com/m'">
+                <p class="ui-footer-cite">
+                    <a href="http://agame.huohou.com/m" class="top">更多</a>
+                </p>
+            </footer>
+        </div>
+        <script type="text/javascript">
+            var game_div_rep = function(s) {
+                $('#index_tuijian').html(s);
+            };
+        </script>
+        <script type="text/javascript">
+          var _zvn=0,_zm=-1,l=-1,_zk=-1,_zj=-1,_zg=-1,_za=-1,_zy=-1,_zp=-1,_zr=-1;function _zz_(i){i=i||window.event;this.target=i.target||i.srcElement};function _zv_(){if(_za==-1){_za=_zu_()};_zy=_zu_()-_za};function _zu_(){return new Date().getTime()};function _Zya_(b){var Z={};if(b in Z)return Z[b];return Z[b]=navigator.userAgent.toLowerCase().indexOf(b)!=-1};function _ZFv_(){if(navigator.plugins&&navigator.mimeTypes.length){var b=navigator.plugins["Shockwave Flash"];if(b&&b.description)return b.description.replace(/([a-zA-Z]|\s)+/,"").replace(/(\s)+r/,".")}else if(_Zya_("msie")&&!window.opera){var c=null;try{c=new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7")}catch(e){var a=0;try{c=new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");a=6;c.AllowScriptAccess="always"}catch(e){if(a==6)return a.toString()};try{c=new ActiveXObject("ShockwaveFlash.ShockwaveFlash")}catch(e){}};if(c!=null){var a=c.GetVariable("$version").split(" ")[1];return a.replace(/,/g,".")}};return"0"};function _Zref_(){var r;try{r=window.top.document.referrer}catch(e){r=document.referrer};if(r){return escape(r)}else{return""}};function _Zzwr_(s){if(!s)return"";str=s.replace(/[\u4E00-\u9FA5]/ig,"x");return str};function _ZSiteurl_(){var s;try{s=window.top.document.location.href}catch(e){s=document.location.href};if(s){return escape(_Zzwr_(s))}else{return""}};function _Zhv_(){var a=0;if(window.top.location==document.location&&document.body){var j=document.body.scrollHeight,v=document.body.clientHeight;if(v&&j){a=Math.round(j)}};return a};function _Zsc_(){var s=window.screen;return s.width+"x"+s.height};function _Zaddsnew_(){var w=window,d=document;var s="&u_fv="+_ZFv_()+"&u_url="+_Zref_()+"&r_url="+_ZSiteurl_()+"&u_sw="+w.screen.width+"&u_sh="+w.screen.height+"&u_scd="+w.screen.colorDepth;if(d.body){s=s+'&u_bw='+d.body.offsetWidth+'&u_bh='+d.body.offsetHeight;t=new Date;t=-t.getTimezoneOffset();s=s+"&u_utz="+t/60};return s}
+          try{var _adds_=_Zaddsnew_();}catch(e){var _adds_="";}
+        </script>
+        <script type="text/javascript">pv_tj(_adds_);</script>
+    </body>
+</html>

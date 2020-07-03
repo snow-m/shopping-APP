@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+       >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="50dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/login_name_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="70.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_name"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+
+                <EditText
+                    android:id="@+id/login_name_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login_pwd_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="70.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_pwd"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+
+                <EditText
+                    android:id="@+id/login_pwd_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:password="true"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="100dip"
+                    android:layout_height="45dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_selector"
+                    android:gravity="center"
+                    android:text="登陆"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="100dip"
+                    android:layout_height="45dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:layout_toRightOf="@+id/login"
+                    android:background="@drawable/btn_selector"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="重置"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="100dip"
+                    android:layout_height="45dip"
+                    android:layout_below="@+id/login"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/btn_selector"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="注册"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/exit"
+                    android:layout_width="100dip"
+                    android:layout_height="45dip"
+                    android:layout_alignTop="@+id/register"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:layout_toRightOf="@+id/register"
+                    android:background="@drawable/btn_selector"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="退出"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
